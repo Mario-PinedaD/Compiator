@@ -1,0 +1,42 @@
+INICIAR{
+Entero v1 = 0;
+Entero v2 = 0;
+Entero dif = 10;
+Entero v = 0;
+
+Entero i = 15;
+
+While (v == 0){
+Escribir("Introduce el primer valor de la serie: ");
+Leer(v1);
+
+Escribir("Introduce el segundo valor de la serie: ");
+Leer(v2);
+
+Escribir("====================================");
+Escribir("La serie inversa fibonacci arranca aqui");
+dif = v1 - v2;
+
+if(dif != v2 & v2 > dif){
+Entero prueba = 1000;
+Entero b = 1;
+	While(prueba > 0){				
+		//dif = v1 - v2;
+		Escribir(v1 + " - " + v2 + " = " + dif);
+		dif = v1 - v2;
+		v1 = v2;
+		prueba = v2 - dif;
+		v2 = dif;
+	}
+	v = 1;
+} else {
+	Escribir("Los numeros no deben de ser seguidos");
+}
+
+}
+//Aqui debe estar el while 0
+
+
+
+
+}

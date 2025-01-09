@@ -1,0 +1,36 @@
+// pedir n numero
+// calcular la sumatora
+// y la multiplicacion de cada uno
+//imprimir 10 veces CIUAL DE LOS 2 ES MAYOR y menor
+
+INICIAR{
+
+Decimal cantidad = 0.0;
+Decimal sumatoria = 0.0;
+Decimal multiplicacion = 1.0;
+Decimal dato = 0.0;
+
+Escribir("Introduce la cantidad de valores que deseas checar");
+Leer(cantidad);
+
+Entero contador = 0;
+While(contador < cantidad){
+	Escribir("Introduce un dato: ");
+	Leer(dato);
+	sumatoria = sumatoria + dato;
+	multiplicacion = multiplicacion * dato;
+	contador = contador + 1;
+}
+
+Entero cont = 0;
+While(cont < 5){
+if(sumatoria > multiplicacion){
+	Escribir("La sumatoria es mayor con: " + sumatoria);
+	Escribir("La multiplicación ees menor con: " + multiplicacion);
+}else {
+	Escribir("La multiplicacion es mayor con: " + multiplicacion);
+	Escribir("La sumatoria es menor con: " + sumatoria);
+}
+cont = cont + 1;
+}
+}

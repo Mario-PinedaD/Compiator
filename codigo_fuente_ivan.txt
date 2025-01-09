@@ -1,0 +1,57 @@
+INICIAR {
+
+    Decimal n; 
+    Entero aprobatorias = 0; 
+    Entero reprobatorias = 0;
+    Decimal calificacion;
+    Decimal suma = 0.0;
+    Decimal promedio;
+
+    // Leer el número de calificaciones
+    Escribir("¿Cuántas calificaciones desea ingresar?");
+    Leer(n);
+
+    Entero i = 1;
+    While (i <= n) {
+        Escribir("Ingrese la calificación " + i + ": ");
+        Leer(calificacion);
+
+        // Validar rango de la calificación
+        if (calificacion < 0 | calificacion > 100) {
+            Escribir("La calificación debe estar entre 0 y 100. Inténtelo nuevamente.");
+            i = i - 1; 
+        }
+ 
+        // Redondear si está entre 60 y 69.99
+        if (calificacion >= 60 & calificacion < 70) {
+            calificacion = 70.0;
+        }
+
+        // Clasificar y contar aprobatorias o reprobatorias
+        if (calificacion >= 70) {
+            aprobatorias = aprobatorias + 1;
+        } else {
+            reprobatorias = reprobatorias + 1;
+        }
+
+        // Acumular para el promedio
+        suma = suma + calificacion;
+        i = i + 1;
+    }
+
+    // Calcular el promedio
+    promedio = suma / n;
+
+    // Generar e imprimir informe 5 veces
+    Entero informe = 1;
+    While (informe <= 5) {
+        Escribir("------- Informe " + informe + " -------");
+        Escribir("Total de calificaciones procesadas: " + n);
+        Escribir("Número de aprobatorias: " + aprobatorias);
+        Escribir("Número de reprobatorias: " + reprobatorias);
+        Escribir("Promedio general: " + promedio);
+        Escribir("--------------------------");
+        informe = informe + 1;
+    }
+}
+

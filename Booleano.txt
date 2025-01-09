@@ -1,0 +1,11 @@
+INICIAR{
+
+boolean p1 = Verdadero;
+Entero p2 = 3;
+Entero resultao = 0;
+
+resultao = p2 % 2;
+Escribir("El residuo es : " + resultao + " ira ira");
+
+
+}

@@ -1,0 +1,19 @@
+INICIAR{
+
+Entero mult = 0;
+Entero dato = 0;
+
+Escribir("Introduce un dato: ");
+Leer(dato);
+
+Entero i = 1;
+Cadena stlin = "";
+
+While(i <= 10){
+	mult = dato * i;
+	Escribir("El resultado de la multiplicacion por " + i);
+	Escribir(mult);
+	i = i + 1;
+}
+
+}

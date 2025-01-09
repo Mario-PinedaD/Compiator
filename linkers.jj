@@ -484,7 +484,7 @@ void VariableFLOAT() : {
             if (!control) {
                 linkers.checkAndAddVariable(id, "float", line, column);
             }
-            codigo_temporal = "\tfloat " + id.image;
+	    codigo_temporal = "\tfloat " + id.image;
         }
         [ <Asignacion>
             try {

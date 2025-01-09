@@ -1,0 +1,23 @@
+INICIAR{
+Entero v1 = 0;
+Entero v2 = 0;
+Entero dif = 10;
+
+Escribir("Introduce el primer valor de la serie: ");
+Leer(v1);
+
+Escribir("Introduce el segundo valor de la serie: ");
+Leer(v2);
+Escribir("====================================");
+Escribir("La serie inversa fibonacci arranca aqui");
+dif = v1 - v2;
+
+	While(v2 > 0){
+		dif = v1 - v2;
+		Escribir(v1 + " - " + v2 + " = " + dif);
+		//dif = v1 - v2;
+		v1 = v2;
+		v2 = dif;
+	}
+}
+

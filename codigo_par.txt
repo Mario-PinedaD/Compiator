@@ -1,0 +1,13 @@
+INICIAR{
+
+Entero var1 = 0;
+
+Escribir("Introduzca un numero 'a': ");
+Leer(var1);
+
+if(var1 % 2 == 0){
+	Escribir("El numero es Par");
+} else{
+	Escribir("El numero es Impar");
+}
+}

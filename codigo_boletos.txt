@@ -1,0 +1,46 @@
+INICIAR{
+Entero dBoletos = 0;
+Entero mitad = 0;
+Entero mitad1 = 0;
+Entero mitad2 = 0;
+Entero mitad3 = 0;
+Entero mitad4 = 0;
+Entero valores = 0;
+Entero residuo = 0;
+
+//boolean par = Falso;
+
+Escribir("Introduzca la cantidad de digitos de boletos: ");
+Leer(dBoletos);
+Entero temporal = 0;
+temporal = dBoletos;
+
+residuo = dBoletos % 2;
+if(residuo ==  0){
+	Escribir("El boleto es par");
+	mitad = dBoletos / 2;
+	
+	Entero i = 1;
+	While(i <= dBoletos){
+		Escribir("Introduzca el valor " + i + " de su boleto");
+		Leer(valores);
+		if(i <= mitad){
+			mitad1 = valores + mitad1;
+		} else {
+			mitad2 = valores + mitad2;
+		}
+
+	i = i + 1;
+	}
+	Escribir("valor de la primera mitad: " + mitad1);
+	Escribir("Valor de la 2da mitad: " + mitad2);
+	if(mitad1 == mitad2){
+		Escribir("Boleto válido");
+	}else{
+		Escribir("Boleto no valido");
+	}
+} else {
+	Escribir("el boleto es impar");
+}
+
+}

@@ -1,0 +1,54 @@
+INICIAR{
+Entero a = 1;
+Decimal cantValores = 0.0;
+Decimal sumatoria = 0.0;
+Decimal dato = 0.0;
+Decimal promedio = 0.0;
+Decimal tempo = 0.0;
+Entero reprobados = 0;
+Entero aprobados = 0;
+
+Escribir("Introduzca una cantidad de valores N: ");
+Leer(cantValores);
+
+While(a <= cantValores){
+	Escribir("Calificacion del alumno " + a + " : ");
+	Leer(dato);
+	if (dato < 0.0){
+	Escribir("La calificación no puede ser menor a cero");
+	Escribir("Por favor introduzca de nuevo la calificación del alumno");
+	aprobados = aprobados - 1;
+	a = a - 1;
+	} else{
+	if(dato <= 69.9 & dato >= 60.0){
+		dato = 70.0;
+	}
+	if(dato >= 0 & dato < 60.0){
+		Escribir("El alumno está reprobado!!!!!!!!!!!!");
+		reprobados = reprobados + 1;
+	}else {
+		Escribir("El alumno está aprobado");
+		aprobados= aprobados + 1;
+	}
+
+	Escribir(dato);
+	sumatoria = sumatoria + dato;	
+}
+	a = a + 1;
+
+}
+
+Entero contador = 0;
+Escribir(sumatoria);
+promedio = sumatoria / cantValores;
+Escribir("Se comenzará con la impresion de 5");
+While(contador < 5){
+	Escribir("========================================");
+	Escribir("Alumnos aprobados :" + aprobados);
+	Escribir("Alumnos reprobados: " + reprobados);
+	Escribir("Promedio de: " + promedio);
+
+contador = contador + 1;
+}
+
+}

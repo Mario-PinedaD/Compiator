@@ -1,0 +1,23 @@
+INICIAR{
+Entero dato = 0;
+Decimal cantidad = 0.0;
+Entero d2 = 0;
+Escribir("Introduce un dato :" );
+Leer(dato);
+Escribir("Introduce la cantidad de veces pa imprimir");
+Leer(d2);
+
+While(dato > 0){
+	dato = dato - 2;
+}
+Entero i = 0;
+While (i < d2){
+if(dato == 0){
+	Escribir("El numero es par");
+}else {
+	Escribir("El dato es impar");
+}
+i = i+1;
+}
+
+}

@@ -1,0 +1,17 @@
+INICIAR{
+
+Entero inicio = 0;
+Entero dato = 0;
+
+Escribir("Introduce un rango 1: ");
+Leer(inicio);
+
+Escribir("Introduce un dato: ");
+Leer(dato);
+Entero cont= 0;
+While(dato > inicio){
+	dato = dato - 2;
+	cont = cont + 1;
+	}
+Escribir("Cantidad de numeros pares: " + cont);
+}

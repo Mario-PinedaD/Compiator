@@ -1,0 +1,41 @@
+INICIAR{
+
+Decimal a = 0.0;
+Decimal b = 0.0;
+Decimal suma = 0.0;
+Decimal resta = 0.0;
+Decimal mult = 0.0;
+Decimal div = 0.0;
+Cadena stlin = "";
+
+Escribir("Introduce una cadenuki:" );
+Leer(stlin);
+
+While(a==0){
+	Escribir("Introduce un numero");
+	Leer(a);
+	if(a==0){
+		Escribir("Por favor introduzca otra cantidad que no sea 0");
+	}
+}
+
+While(b==0){
+	Escribir("Introduce otro numero");
+	Leer(b);
+	if(b==0){
+		Escribir("Por favor introduzca otra cantidad que no sea 0");
+	}
+}
+
+suma = a + b;
+resta = a - b;
+mult = a * b;
+div = a / b;
+
+Escribir("La variable string es: " + stlin);
+Escribir("La suma es: " + suma);
+Escribir("La resta es: " + resta);
+Escribir("La multiplicacion es: " + mult);
+Escribir("La división es: " + div);
+
+}

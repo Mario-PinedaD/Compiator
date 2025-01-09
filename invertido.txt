@@ -1,0 +1,21 @@
+INICIAR{
+
+Cadena palabra = "";
+Cadena pInvertida = "";
+Entero longitud = 0;
+Escribir("INGRESA UNA PALABRA: ");
+Leer(palabra);
+
+Entero i = 0;
+Entero cond = 0;
+While(cond == 0){
+if(i == 1000){
+	Escribir("llegço al valor necesario");
+	cond = 1;
+}
+	i = i + 1;
+}
+
+Escribir("PALABRA INVERTIDA: " + pInvertida);
+
+}
